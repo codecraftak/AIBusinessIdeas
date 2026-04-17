@@ -12,11 +12,16 @@ import base64
 # Load environment variables
 load_dotenv()
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-EMAIL_SENDER = os.getenv("EMAIL_SENDER", "ezibelltech@gmail.com")
-EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
-EMAIL_RECIPIENT = os.getenv("EMAIL_RECIPIENT", "ezibelltech@gmail.com")
-EMAIL_CC = os.getenv("EMAIL_CC", "ashu1997kumawat@gmail.com")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") or ""
+EMAIL_SENDER = os.getenv("EMAIL_SENDER") or "ezibelltech@gmail.com"
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD") or ""
+EMAIL_RECIPIENT = os.getenv("EMAIL_RECIPIENT") or "ezibelltech@gmail.com"
+EMAIL_CC = os.getenv("EMAIL_CC") or "ashu1997kumawat@gmail.com"
+
+if not GEMINI_API_KEY:
+    raise ValueError("GEMINI_API_KEY is missing or empty. Please set it in your environment or GitHub Secrets.")
+if not EMAIL_PASSWORD:
+    raise ValueError("EMAIL_PASSWORD is missing or empty. Please set it in your environment or GitHub Secrets.")
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 
@@ -76,15 +81,20 @@ OUTPUT STRICT JSON ONLY:
 """
 
     model = genai.GenerativeModel('gemini-flash-latest', generation_config={"response_mime_type": "application/json"})
-    response = model.generate_content(prompt)
     
+    try:
+        response = model.generate_content(prompt)
+    except Exception as e:
+        print(f"Error calling Gemini API: {e}")
+        raise e
+        
     try:
         idea = json.loads(response.text)
         idea['date'] = datetime.now().strftime("%Y-%m-%d")
         return idea
     except Exception as e:
         print(f"Error parsing Gemini response: {e}")
-        print("Raw response:", response.text)
+        print("Raw response:", getattr(response, 'text', 'No text in response'))
         raise e
 
 def create_html_email(idea):

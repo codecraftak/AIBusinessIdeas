@@ -8,6 +8,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 import zlib
 import base64
+import uuid
 
 # Load environment variables
 load_dotenv()
@@ -46,6 +47,13 @@ def encode_kroki(mermaid_txt):
     return base64.urlsafe_b64encode(compressed).decode('utf-8').rstrip('=')
 
 def generate_idea(existing_ideas):
+    all_past_keywords = []
+    for idea in existing_ideas:
+        keys = idea.get('keywords', [])
+        if isinstance(keys, list):
+            all_past_keywords.extend(keys)
+    all_past_keywords = list(set(all_past_keywords))
+
     prompt = f"""
 You are an intelligent but extremely practical SaaS founder who explains things so simply that even a beginner can understand, but you explain them in EXTREME DETAIL.
 
@@ -53,7 +61,10 @@ Generate ONE highly unique, lucrative, B2B or B2C micro-SaaS idea.
 It must be easy to visualize, solve a clear everyday problem, and be executable by a small team in 30 days.
 
 Constraints:
-- NEVER repeat: {json.dumps([idea.get('idea_name', '') for idea in existing_ideas])}
+- NEVER repeat these existing software names: {json.dumps([idea.get('idea_name', '') for idea in existing_ideas if idea.get('idea_name')])}
+- NEVER repeat these topics/niches: {json.dumps([idea.get('topic', '') for idea in existing_ideas if idea.get('topic')])}
+- NEVER reuse these core keywords/concepts: {json.dumps(all_past_keywords)}
+- Make sure your new idea is from a COMPLETELY DIFFERENT topic/industry from the above.
 - The `mermaid_architecture` field MUST contain a valid, clean Mermaid.js graph direction (e.g. graph TD) demonstrating the system's architecture (User -> Frontend -> Backend -> DB/AI).
 - CRITICAL: Write in EXTREMELY SIMPLE, BASIC ENGLISH. No jargon, no complicated consultant-speak. Explain things thoroughly from start to finish.
 - Give a lot of detail. Expand on exactly what happens from the moment the user clicks a button to the moment money hits the bank account.
@@ -62,6 +73,8 @@ OUTPUT STRICT JSON ONLY:
 {{
   "date": "<YYYY-MM-DD>",
   "idea_name": "Catchy Name",
+  "topic": "The core topic or niche (e.g., HR Tech, AI Legal Tool, Web3 Social)",
+  "keywords": ["keyword1", "keyword2", "keyword3"],
   "tagline": "A powerful, visionary tagline.",
   "the_problem_story": "Write a massive, deep story (4-5 sentences) describing the exact pain point. Make the reader FEEL the frustration. Details matter.",
   "the_solution_vision": "Explain in detail exactly how your tech swoops in like magic to solve it step-by-step. Break down what it actually does. (4-5 sentences)",
@@ -89,7 +102,13 @@ OUTPUT STRICT JSON ONLY:
         raise e
         
     try:
-        idea = json.loads(response.text)
+        text = response.text.strip()
+        start = text.find('{')
+        end = text.rfind('}')
+        if start != -1 and end != -1:
+            text = text[start:end+1]
+            
+        idea = json.loads(text)
         idea['date'] = datetime.now().strftime("%Y-%m-%d")
         return idea
     except Exception as e:
@@ -282,8 +301,11 @@ def main():
     print(f"Generated Idea: {new_idea.get('idea_name')}")
     
     history.append({
+        "id": str(uuid.uuid4()),
         "date": new_idea.get("date"),
-        "idea_name": new_idea.get("idea_name")
+        "idea_name": new_idea.get("idea_name"),
+        "topic": new_idea.get("topic", "N/A"),
+        "keywords": new_idea.get("keywords", [])
     })
     save_history(history)
     

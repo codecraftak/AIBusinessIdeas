@@ -1,42 +1,62 @@
 [
     {
         "date": "2026-04-14",
-        "idea_name": "LinkSentinel"
+        "idea_name": "LinkSentinel",
+        "id": "51f26687-f527-4e6e-8155-d6867d0b8df4",
+        "topic": "Legacy Idea (Topic Unknown)"
     },
     {
         "date": "2026-04-14",
-        "idea_name": "ContractEye"
+        "idea_name": "ContractEye",
+        "id": "1c47afdd-e11f-4f7b-a2d8-2355bff8265f",
+        "topic": "Legacy Idea (Topic Unknown)"
     },
     {
         "date": "2026-04-14",
-        "idea_name": "SecretSieve"
+        "idea_name": "SecretSieve",
+        "id": "c56f9606-7626-4db6-95c1-9d59926881bc",
+        "topic": "Legacy Idea (Topic Unknown)"
     },
     {
         "date": "2026-04-14",
-        "idea_name": "AuraTrace"
+        "idea_name": "AuraTrace",
+        "id": "20b28b80-e9eb-4222-b8f2-5d1e65aa4200",
+        "topic": "Legacy Idea (Topic Unknown)"
     },
     {
         "date": "2026-04-14",
-        "idea_name": "GhostGraph"
+        "idea_name": "GhostGraph",
+        "id": "3836524f-4316-4eba-a063-9705dff95dee",
+        "topic": "Legacy Idea (Topic Unknown)"
     },
     {
         "date": "2026-04-14",
-        "idea_name": "TrialGuard"
+        "idea_name": "TrialGuard",
+        "id": "85edb36e-421c-4794-bb70-8d2f54ed00f0",
+        "topic": "Legacy Idea (Topic Unknown)"
     },
     {
         "date": "2026-04-14",
-        "idea_name": "SimpleTextBill"
+        "idea_name": "SimpleTextBill",
+        "id": "3a749e14-473f-4200-98af-96c904fb1f6f",
+        "topic": "Legacy Idea (Topic Unknown)"
     },
     {
         "date": "2026-04-14",
-        "idea_name": "ManualMagic"
+        "idea_name": "ManualMagic",
+        "id": "c50bd94f-3368-434e-ba7a-37438c469c1e",
+        "topic": "Legacy Idea (Topic Unknown)"
     },
     {
         "date": "2026-04-17",
-        "idea_name": "StudioSwift"
+        "idea_name": "StudioSwift",
+        "id": "efd48d93-c83d-4777-8c31-98e508a3b60f",
+        "topic": "Legacy Idea (Topic Unknown)"
     },
     {
         "date": "2026-04-17",
-        "idea_name": "ReturnShield"
+        "idea_name": "ReturnShield",
+        "id": "95bb489e-9e1b-4271-9c73-e1e8928bc2fb",
+        "topic": "Legacy Idea (Topic Unknown)"
     }
 ]

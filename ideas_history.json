@@ -85,7 +85,6 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "9d06ceee-5d08-4748-a380-799db92f4b85",
         "date": "2026-04-18",
         "idea_name": "ReviewReel",
@@ -109,17 +108,6 @@
             "Metadata Verification",
             "Property Condition Report",
             "Tenant Advocacy"
-=======
-        "id": "07ae3efc-5879-4445-a6dd-b4a98bbdd44b",
-        "date": "2026-04-18",
-        "idea_name": "StayStitch",
-        "topic": "PropTech / Hospitality Maintenance Automation",
-        "keywords": [
-            "short-term rental maintenance",
-            "Airbnb host automation",
-            "property management triage",
-            "visual ticket system"
->>>>>>> e4a0970ba7f49455b39131722e2637875db3c49f
         ]
     }
 ]

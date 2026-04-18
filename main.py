@@ -87,10 +87,14 @@ OUTPUT STRICT JSON ONLY:
   "system_architecture_deep_dive": "Extreme, long-form masterclass detail (400-600 words) for a beginner. Cover everything from setup commands to technical logic and secret tricks.",
   "target_audience": ["Person 1: Simple deep detail", "Person 2: Simple deep detail"],
   "financials": {{
-    "model": "Subscription or pay-per-use specifics.",
-    "tiers": ["Tier 1: detail", "Tier 2: detail"],
-    "arr_potential": "$X after 1 year",
-    "monetization_masterplan": "Exactly how do we convince them to pay? What is the psychology of the pricing? How do we upsell them later? (Deep paragraph)"
+    "model": "Subscription, pay-per-use, or hybrid model explained simply.",
+    "tiers": [
+      "Tier 1: <Name> - <Price> - Deep description of why this price point works for small users.",
+      "Tier 2: <Name> - <Price> - Deep description of why this is the most popular/profitable choice.",
+      "Tier 3: <Name> - <Price> - High-ticket details for enterprise/power users."
+    ],
+    "arr_potential": "A realistic, calculated $ value (e.g. $12,500/mo * 12 = $150k). Explain the logic/math behind this number.",
+    "monetization_masterplan": "A massive, step-by-step 'Money Masterclass' (400-600 words) for a total beginner. You MUST include: 1) SETUP: Exactly which payment gateway to use (Stripe/LemonSqueezy) and the first 3 steps to go live. 2) PSYCHOLOGY: Why these specific prices will make users say 'Take my money!' 3) GROWTH HACKS: One specific trick to double the revenue (e.g., 'The Middle-Price Trap' or 'Annual Discount'). 4) CHURN SHIELD: One specific way to stop users from canceling. Make it so detailed that a beginner doesn't need to Google anything."
   }},
   "tech_stack": ["Tech 1", "Tech 2", "Tech 3", "Tech 4"],
   "go_to_market": ["Detailed Step 1 to get users", "Detailed Step 2 to get users"],
@@ -244,17 +248,17 @@ def create_html_email(idea):
                         <h4>👥 Target Audience</h4>
                         <ul>{audience_list}</ul>
                     </div>
-                    <div class="data-card">
-                        <h4>💎 Monetization & ARR</h4>
+                    <div class="data-card" style="border-left: 4px solid #10b981;">
+                        <h4>💎 Financial Potential</h4>
                         <p style="font-size: 13px; color: #64748b; margin-top:0;"><strong>Model:</strong> {idea.get('financials', {}).get('model', '')}</p>
-                        <p style="font-size: 13px; color: #10b981; font-weight:bold;">Projected: {idea.get('financials', {}).get('arr_potential', '')}</p>
-                        <ul>{pricing_list}</ul>
+                        <p style="font-size: 14px; color: #059669; font-weight:bold; background: #ecfdf5; padding: 10px; border-radius: 6px; margin: 10px 0;">🚀 {idea.get('financials', {}).get('arr_potential', '')}</p>
+                        <ul style="font-size: 13px;">{pricing_list}</ul>
                     </div>
                 </div>
 
-                <div class="section-header">💸 The Monetization Masterplan</div>
-                <div style="background: #ffffff; border-left: 4px solid #f59e0b; border-radius: 4px; padding: 20px; font-size: 15px; color: #334155; line-height: 1.7; margin-bottom: 30px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
-                    {idea.get('financials', {}).get('monetization_masterplan', '')}
+                <div class="section-header">💰 The Money Masterclass (Profitable Execution)</div>
+                <div style="background: #fffcf0; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; border-radius: 12px; padding: 30px; font-size: 16px; color: #78350f; line-height: 1.8; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.08); white-space: pre-line;">
+                    {idea.get('financials', {}).get('monetization_masterplan', 'Developing monetization blueprints...')}
                 </div>
 
                 <div class="section-header">📈 Go-to-Market Strategy</div>

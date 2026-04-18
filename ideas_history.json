@@ -83,5 +83,31 @@
             "Recipe Analysis",
             "Cottage Food Industry"
         ]
+    },
+    {
+        "id": "9d06ceee-5d08-4748-a380-799db92f4b85",
+        "date": "2026-04-18",
+        "idea_name": "ReviewReel",
+        "topic": "Marketing Technology (MarTech)",
+        "keywords": [
+            "Video Testimonials",
+            "Social Proof",
+            "Local Business Marketing",
+            "AI Video Editing",
+            "Customer Advocacy"
+        ]
+    },
+    {
+        "id": "9d09a108-96c2-433d-86ff-0bbfd066c826",
+        "date": "2026-04-18",
+        "idea_name": "ProofPad",
+        "topic": "PropTech / Tenant Rights & Property Documentation",
+        "keywords": [
+            "Security Deposit Protection",
+            "Rental Inspection",
+            "Metadata Verification",
+            "Property Condition Report",
+            "Tenant Advocacy"
+        ]
     }
 ]

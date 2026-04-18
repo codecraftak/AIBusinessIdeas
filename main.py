@@ -66,8 +66,12 @@ Constraints:
 - NEVER reuse these core keywords/concepts: {json.dumps(all_past_keywords)}
 - Make sure your new idea is from a COMPLETELY DIFFERENT topic/industry from the above.
 - The `mermaid_architecture` field MUST contain a valid, clean Mermaid.js graph direction (e.g. graph TD) demonstrating the system's architecture (User -> Frontend -> Backend -> DB/AI).
-- CRITICAL: Write in EXTREMELY SIMPLE, BASIC ENGLISH. No jargon, no complicated consultant-speak. Explain things thoroughly from start to finish.
-- Give a lot of detail. Expand on exactly what happens from the moment the user clicks a button to the moment money hits the bank account.
+- In the `system_architecture_deep_dive` field, provide an EXTREME, MASTERCLASS-LEVEL breakdown. Imagine you are writing for a total beginner who has never built a SaaS before. You must provide:
+    1) THE ENGINE: List every single specific library, framework, and API required (e.g., 'Use React for UI, Tailwind for styling, Supabase for Auth/DB'). Explain WHY each is used.
+    2) DATA HIGHWAY: Explain exactly how data moves from the user's click to the database. Describe what happens in the background step-by-step.
+    3) INITIAL PROTOCOL: Tell them the exact first 5 steps they should take to start coding this (e.g., 'Step 1: Run npx create-react-app. Step 2: Install X. Step 3: Setup Y account').
+    4) THE SECRET SAUCE: Mention one clever technical trick or logic they should implement to make the app better than competitors.
+- CRITICAL: Use very simple language but provide MASSIVE amounts of text. No coding jargon without explaining it. This section should be long and extremely helpful.
 
 OUTPUT STRICT JSON ONLY:
 {{
@@ -80,6 +84,7 @@ OUTPUT STRICT JSON ONLY:
   "the_solution_vision": "Explain in detail exactly how your tech swoops in like magic to solve it step-by-step. Break down what it actually does. (4-5 sentences)",
   "detailed_user_journey": "From start to finish: Step 1) User lands on page. Step 2) They upload X. Step 3) System processes Y. Step 4) Outcome is Z. Be extremely descriptive.",
   "mermaid_architecture": "graph TD\\n  User-->FrontEnd\\n  FrontEnd-->Backend\\n  Backend-->AI\\n  Backend-->DB",
+  "system_architecture_deep_dive": "Extreme, long-form masterclass detail (400-600 words) for a beginner. Cover everything from setup commands to technical logic and secret tricks.",
   "target_audience": ["Person 1: Simple deep detail", "Person 2: Simple deep detail"],
   "financials": {{
     "model": "Subscription or pay-per-use specifics.",
@@ -227,6 +232,11 @@ def create_html_email(idea):
                     <div style="margin-top: 15px;">
                         {tech_list}
                     </div>
+                </div>
+                
+                <div class="section-header">🧬 The Technical Blueprint (Masterclass)</div>
+                <div style="background: #fdfcfe; border: 1px solid #e9d5ff; border-left: 5px solid #a855f7; border-radius: 12px; padding: 30px; font-size: 16px; color: #3b0764; line-height: 1.8; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(168, 85, 247, 0.08); white-space: pre-line;">
+                   {idea.get('system_architecture_deep_dive', 'Preparing technical blueprints...')}
                 </div>
 
                 <div class="data-grid">

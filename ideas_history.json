@@ -58,5 +58,30 @@
         "idea_name": "ReturnShield",
         "id": "95bb489e-9e1b-4271-9c73-e1e8928bc2fb",
         "topic": "Legacy Idea (Topic Unknown)"
+    },
+    {
+        "id": "cf1c3d21-157b-4356-bdac-85199b528a8a",
+        "date": "2026-04-18",
+        "idea_name": "RefundRocket",
+        "topic": "E-commerce Logistics and Financial Recovery",
+        "keywords": [
+            "Shipping Refunds",
+            "Logistics Automation",
+            "Ecommerce Finance",
+            "Carrier Auditing"
+        ]
+    },
+    {
+        "id": "68ab6920-f8f5-4372-9a80-9f17b110ae67",
+        "date": "2026-04-18",
+        "idea_name": "LabelLoom",
+        "topic": "Food Compliance and Regulatory Technology",
+        "keywords": [
+            "FDA Compliance",
+            "Nutrition Facts Generator",
+            "Food Tech SaaS",
+            "Recipe Analysis",
+            "Cottage Food Industry"
+        ]
     }
 ]

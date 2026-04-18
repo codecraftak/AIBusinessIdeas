@@ -83,5 +83,17 @@
             "Recipe Analysis",
             "Cottage Food Industry"
         ]
+    },
+    {
+        "id": "07ae3efc-5879-4445-a6dd-b4a98bbdd44b",
+        "date": "2026-04-18",
+        "idea_name": "StayStitch",
+        "topic": "PropTech / Hospitality Maintenance Automation",
+        "keywords": [
+            "short-term rental maintenance",
+            "Airbnb host automation",
+            "property management triage",
+            "visual ticket system"
+        ]
     }
 ]

@@ -109,5 +109,30 @@
             "Property Condition Report",
             "Tenant Advocacy"
         ]
+    },
+    {
+        "id": "59ad016f-c13e-41a3-b80b-a8f95740e4f8",
+        "date": "2026-10-05",
+        "idea_name": "ClinicScribe Sync",
+        "topic": "Veterinary Practice Operations & Medical Record Transcription",
+        "keywords": [
+            "Veterinary SaaS",
+            "Vet Charting",
+            "SOAP Note Generator",
+            "Pet Healthcare Tech",
+            "Clinical Dictation"
+        ]
+    },
+    {
+        "id": "c1ef3827-19ec-4919-b676-39be3f64956a",
+        "date": "2026-10-05",
+        "idea_name": "HazWarden",
+        "topic": "Auto Repair Compliance & Environmental Safety Operations",
+        "keywords": [
+            "Garage Regulations",
+            "Hazardous Waste Logs",
+            "Environmental Manifests",
+            "Shop Auditing"
+        ]
     }
 ]

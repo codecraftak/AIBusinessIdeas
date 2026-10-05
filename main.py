@@ -14,10 +14,9 @@ import uuid
 load_dotenv()
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") or ""
-EMAIL_SENDER = os.getenv("EMAIL_SENDER") or "ezibelltech@gmail.com"
+EMAIL_SENDER = os.getenv("EMAIL_SENDER") or "aksh0576@gmail.com"
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD") or ""
-EMAIL_RECIPIENT = os.getenv("EMAIL_RECIPIENT") or "ezibelltech@gmail.com"
-EMAIL_CC = os.getenv("EMAIL_CC") or "ashu1997kumawat@gmail.com"
+EMAIL_RECIPIENT = os.getenv("EMAIL_RECIPIENT") or "aksh0576@gmail.com"
 
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY is missing or empty. Please set it in your environment or GitHub Secrets.")
@@ -102,7 +101,7 @@ OUTPUT STRICT JSON ONLY:
 }}
 """
 
-    model = genai.GenerativeModel('gemini-flash-latest', generation_config={"response_mime_type": "application/json"})
+    model = genai.GenerativeModel('gemini-3.5-flash', generation_config={"response_mime_type": "application/json"})
     
     try:
         response = model.generate_content(prompt)
@@ -271,7 +270,7 @@ def create_html_email(idea):
             
             <!-- Footer -->
             <div class="footer">
-                <strong>Ezibell Tech Intelligence</strong><br>
+                <strong>AI Intelligence</strong><br>
                 Automated daily SaaS insight engine powered by Gemini AI & Kroki.<br>
                 Keep innovating.
             </div>
@@ -285,9 +284,9 @@ def create_html_email(idea):
 def send_email(subject, html_content):
     msg = MIMEMultipart("alternative")
     msg['Subject'] = subject
-    msg['From'] = f"Ezibell Tech <{EMAIL_SENDER}>"
+    msg['From'] = f"AI Business Ideas <{EMAIL_SENDER}>"
     
-    recipients = [EMAIL_RECIPIENT, EMAIL_CC]
+    recipients = [EMAIL_RECIPIENT]
     recipients = [r for r in recipients if r]
     
     msg['To'] = ", ".join(recipients)

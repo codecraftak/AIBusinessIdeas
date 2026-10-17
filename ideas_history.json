@@ -134,5 +134,17 @@
             "Environmental Manifests",
             "Shop Auditing"
         ]
+    },
+    {
+        "id": "77cc0e85-4b2b-4f81-be84-6b522928258d",
+        "date": "2026-10-17",
+        "idea_name": "CheckridePro",
+        "topic": "Aviation Tech & Flight Training Compliance",
+        "keywords": [
+            "Aviation SaaS",
+            "FAA Logbook Audit",
+            "Flight School Software",
+            "Pilot Endorsement Scanner"
+        ]
     }
 ]

@@ -15,12 +15,14 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
       with:
+        ref: main
+        fetch-depth: 0
         token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.10'
+        python-version: '3.11'
 
     - name: Install Dependencies
       run: |
@@ -41,4 +43,8 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add ideas_history.json
-        git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update daily idea history" && git push)
+        if ! git diff --staged --quiet; then
+          git commit -m "chore: update daily idea history"
+          git pull --rebase origin main
+          git push origin main
+        fi

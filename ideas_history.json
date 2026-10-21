@@ -169,5 +169,18 @@
             "Health Department Audit Compliance",
             "Aquatic Center Log Automation"
         ]
+    },
+    {
+        "id": "deadc435-0427-40d3-9326-96b216371083",
+        "date": "2026-10-21",
+        "idea_name": "CaskLogix",
+        "topic": "Craft Distillery Batch & Barrel Compliance Tech",
+        "keywords": [
+            "Craft Distillery",
+            "TTB Excise Compliance",
+            "Barrel Aging Tracker",
+            "Proof Gallon Calculator",
+            "Micro-Distillery Software"
+        ]
     }
 ]

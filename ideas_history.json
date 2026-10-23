@@ -195,5 +195,16 @@
             "HVAC Apprentice Log",
             "Electrician Training Hours"
         ]
+    },
+    {
+        "id": "ccbe2a31-5cbf-441c-ab14-759ac99ceef3",
+        "date": "2026-10-23",
+        "idea_name": "PlanStride",
+        "topic": "Special Education Technology (EdTech) & IEP Goal Progress Tracking",
+        "keywords": [
+            "Special Education SaaS",
+            "IEP Goal Tracking",
+            "EdTech Classroom Progress"
+        ]
     }
 ]

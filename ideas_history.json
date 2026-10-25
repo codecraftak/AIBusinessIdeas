@@ -217,5 +217,17 @@
             "Garment Alteration Tracking",
             "Fitting Measurement Log"
         ]
+    },
+    {
+        "id": "76be43ea-fb09-4342-8a95-7d2592cad91c",
+        "date": "2026-10-25",
+        "idea_name": "WhistleSync",
+        "topic": "Youth Sports League Operations & Referee Pay Automation",
+        "keywords": [
+            "Referee Dispatch Software",
+            "Youth Sports League Operations",
+            "League Incident Reporting",
+            "Automated Sports Official Payroll"
+        ]
     }
 ]

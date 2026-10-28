@@ -241,5 +241,16 @@
             "OSHA Heavy Lifting Safety",
             "Synthetic Sling Wear Audit"
         ]
+    },
+    {
+        "id": "09756519-af7e-4e9f-99d5-1027ac00f099",
+        "date": "2026-10-28",
+        "idea_name": "SporePulse",
+        "topic": "Dental Office Infection Control & Autoclave Compliance",
+        "keywords": [
+            "dental autoclave log",
+            "spore test tracking",
+            "dental infection control compliance"
+        ]
     }
 ]

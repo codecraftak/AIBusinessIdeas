@@ -252,5 +252,17 @@
             "spore test tracking",
             "dental infection control compliance"
         ]
+    },
+    {
+        "id": "5e4e9452-6435-4210-be1f-76aaaf9316c9",
+        "date": "2026-10-29",
+        "idea_name": "HydroDeck",
+        "topic": "Commercial Diving Operations & Underwater Infrastructure Safety Compliance",
+        "keywords": [
+            "Commercial Diving Software",
+            "ADCI Compliance Log",
+            "Decompression Stop Calculator",
+            "Underwater Infrastructure Inspection"
+        ]
     }
 ]

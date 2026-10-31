@@ -264,5 +264,17 @@
             "Decompression Stop Calculator",
             "Underwater Infrastructure Inspection"
         ]
+    },
+    {
+        "id": "d8f42350-91c0-4421-97a7-04b277c47060",
+        "date": "2026-10-31",
+        "idea_name": "DecibelProof",
+        "topic": "Event Venue Municipal Sound Ordinance Compliance & Decibel Logging",
+        "keywords": [
+            "sound ordinance compliance",
+            "decibel monitoring",
+            "event venue management",
+            "noise permit tracking"
+        ]
     }
 ]

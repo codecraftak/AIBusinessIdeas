@@ -276,5 +276,16 @@
             "event venue management",
             "noise permit tracking"
         ]
+    },
+    {
+        "id": "8d434e00-05cd-4b8c-ac60-5a7c52b77d31",
+        "date": "2026-11-01",
+        "idea_name": "PyreLog",
+        "topic": "Mortuary Operations & Crematory Regulatory Compliance",
+        "keywords": [
+            "crematory software",
+            "mortuary compliance",
+            "chain of custody tracking"
+        ]
     }
 ]

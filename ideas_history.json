@@ -287,5 +287,17 @@
             "mortuary compliance",
             "chain of custody tracking"
         ]
+    },
+    {
+        "id": "b43ecdbf-af7d-402b-b224-185c70e2024d",
+        "date": "2026-11-02",
+        "idea_name": "InkVault Compliance",
+        "topic": "Body Art & Tattoo Studio Operations Tech",
+        "keywords": [
+            "tattoo studio consent",
+            "biohazard waste tracking",
+            "digital waiver kiosk",
+            "health inspector compliance"
+        ]
     }
 ]

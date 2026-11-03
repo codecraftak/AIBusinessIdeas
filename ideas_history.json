@@ -299,5 +299,17 @@
             "digital waiver kiosk",
             "health inspector compliance"
         ]
+    },
+    {
+        "id": "e5dda242-1f71-45d5-89fa-31941c5d696a",
+        "date": "2026-11-03",
+        "idea_name": "TowerPure Sync",
+        "topic": "Industrial HVAC & Environmental Health Safety (Cooling Tower Compliance)",
+        "keywords": [
+            "Legionella Risk Management",
+            "Cooling Tower Biocide Log",
+            "ASHRAE 188 Compliance",
+            "HVAC Water Treatment Audit"
+        ]
     }
 ]

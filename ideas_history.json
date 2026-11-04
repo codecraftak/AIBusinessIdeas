@@ -311,5 +311,16 @@
             "ASHRAE 188 Compliance",
             "HVAC Water Treatment Audit"
         ]
+    },
+    {
+        "id": "1b324e46-bbec-4957-81ba-85426ad46c8e",
+        "date": "2026-11-04",
+        "idea_name": "CanopyMetrics",
+        "topic": "Urban Forestry & Certified Arborist Hazard Compliance",
+        "keywords": [
+            "Arborist Tree Hazard Assessment",
+            "ISA TRAQ Compliance Software",
+            "Municipal Tree Permit Automation"
+        ]
     }
 ]

@@ -322,5 +322,17 @@
             "ISA TRAQ Compliance Software",
             "Municipal Tree Permit Automation"
         ]
+    },
+    {
+        "id": "ec52b3a0-68c3-4fe5-8057-6014d761cb43",
+        "date": "2026-11-05",
+        "idea_name": "ArcVault Pro",
+        "topic": "Industrial Welding Certification & WPS Compliance Software",
+        "keywords": [
+            "welder continuity tracking",
+            "AWS D1.1 compliance",
+            "welding procedure specification",
+            "structural steel quality control"
+        ]
     }
 ]

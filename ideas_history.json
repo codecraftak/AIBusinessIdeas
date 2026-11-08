@@ -356,5 +356,17 @@
             "ASME A17.1 compliance",
             "vertical transportation dispatch"
         ]
+    },
+    {
+        "id": "909eb646-bcb4-44fc-9d80-0768dceb0ac1",
+        "date": "2026-11-08",
+        "idea_name": "GallerySplit",
+        "topic": "Art Gallery Consignment & Artist Payout Automation SaaS",
+        "keywords": [
+            "art gallery consignment software",
+            "artist payout automation",
+            "artwork provenance tracking",
+            "gallery commission management"
+        ]
     }
 ]

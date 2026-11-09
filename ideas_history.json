@@ -368,5 +368,16 @@
             "artwork provenance tracking",
             "gallery commission management"
         ]
+    },
+    {
+        "id": "bf41dfad-7e0e-47ec-ac9f-0307d9e0a5c5",
+        "date": "2026-11-09",
+        "idea_name": "FireTag Pro",
+        "topic": "Fire Protection Service Operations & Fire Safety Equipment Compliance SaaS",
+        "keywords": [
+            "fire extinguisher inspection software",
+            "NFPA compliance app",
+            "fire safety routing and tagging"
+        ]
     }
 ]

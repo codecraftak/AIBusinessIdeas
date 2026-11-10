@@ -379,5 +379,17 @@
             "NFPA compliance app",
             "fire safety routing and tagging"
         ]
+    },
+    {
+        "id": "91172398-1e21-4f4d-9a08-49841c59e1a2",
+        "date": "2026-11-10",
+        "idea_name": "VaultLien Pro",
+        "topic": "Self-Storage Facility Legal Lien & Auction Compliance",
+        "keywords": [
+            "self storage lien compliance",
+            "storage default workflow",
+            "certified mail tracking for storage",
+            "auction legal notice log"
+        ]
     }
 ]

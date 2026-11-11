@@ -391,5 +391,16 @@
             "certified mail tracking for storage",
             "auction legal notice log"
         ]
+    },
+    {
+        "id": "1dc439d9-7d14-4a15-aa2a-1cadb05fe7f9",
+        "date": "2026-11-11",
+        "idea_name": "PestPulse OS",
+        "topic": "Commercial Pest Control Chemical Compliance & Field Operations",
+        "keywords": [
+            "pesticide log software",
+            "EPA chemical tracking",
+            "exterminator compliance app"
+        ]
     }
 ]

@@ -415,5 +415,17 @@
             "flue condition report",
             "chimney sweep app"
         ]
+    },
+    {
+        "id": "dc77c053-569c-4d05-a8e0-bbd3e666aa9c",
+        "date": "2026-11-13",
+        "idea_name": "BenchCalib",
+        "topic": "Biotech Operations & GLP Laboratory Equipment Calibration Compliance",
+        "keywords": [
+            "biotech lab software",
+            "GLP calibration tracking",
+            "pipette calibration log",
+            "ISO 17025 laboratory compliance"
+        ]
     }
 ]

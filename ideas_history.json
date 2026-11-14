@@ -427,5 +427,16 @@
             "pipette calibration log",
             "ISO 17025 laboratory compliance"
         ]
+    },
+    {
+        "id": "4cfee9e8-17fa-4231-a5ac-f28b974dd9d1",
+        "date": "2026-11-14",
+        "idea_name": "TreadKeeper OS",
+        "topic": "Commercial Fleet Logistics & Tire Wear Compliance Software",
+        "keywords": [
+            "fleet tire wear audit",
+            "commercial vehicle tread compliance",
+            "delivery van safety inspection"
+        ]
     }
 ]

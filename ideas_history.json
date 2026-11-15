@@ -438,5 +438,18 @@
             "commercial vehicle tread compliance",
             "delivery van safety inspection"
         ]
+    },
+    {
+        "id": "4c07daae-7176-4b1b-ac13-93ea3a7ecdbc",
+        "date": "2026-11-15",
+        "idea_name": "ApiaryGrid",
+        "topic": "AgTech / Commercial Beekeeping Operations & Hive Yield Intelligence",
+        "keywords": [
+            "beekeeping software",
+            "apiary management",
+            "hive health tracking",
+            "honey harvest yields",
+            "varroa mite logging"
+        ]
     }
 ]

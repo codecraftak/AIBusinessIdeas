@@ -463,5 +463,16 @@
             "tack coat temperature log",
             "highway construction compliance"
         ]
+    },
+    {
+        "id": "269b0425-c0f5-4d8d-9e30-65dbba4c44f1",
+        "date": "2026-11-18",
+        "idea_name": "SlipGrid",
+        "topic": "Independent Marina & Yacht Club Operations Tech",
+        "keywords": [
+            "marina transient slip booking",
+            "dockmaster electric meter billing",
+            "boat slip lease automation"
+        ]
     }
 ]

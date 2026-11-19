@@ -474,5 +474,17 @@
             "dockmaster electric meter billing",
             "boat slip lease automation"
         ]
+    },
+    {
+        "id": "21b27702-8018-4100-b272-af3aed1828f6",
+        "date": "2026-11-19",
+        "idea_name": "RoastSpec OS",
+        "topic": "Specialty Coffee Roasting Operations & Air Quality Compliance Tech",
+        "keywords": [
+            "coffee roasting software",
+            "SCA cupping log",
+            "roaster emission compliance",
+            "green bean moisture tracking"
+        ]
     }
 ]

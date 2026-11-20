@@ -486,5 +486,17 @@
             "roaster emission compliance",
             "green bean moisture tracking"
         ]
+    },
+    {
+        "id": "2ffe560e-3471-461b-9396-2699dcebdb04",
+        "date": "2026-11-20",
+        "idea_name": "GridCert OS",
+        "topic": "Renewable Energy Infrastructure & Commercial Solar Contracting Operations Tech",
+        "keywords": [
+            "solar installation audit",
+            "grid interconnection compliance",
+            "commercial PV commissioning",
+            "solar inspector report software"
+        ]
     }
 ]

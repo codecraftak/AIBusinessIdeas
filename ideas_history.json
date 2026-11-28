@@ -533,5 +533,17 @@
             "resale pricing engine",
             "liquidator catalog automation"
         ]
+    },
+    {
+        "id": "1914b75a-5d48-44bb-b060-6c04e0862c03",
+        "date": "2026-11-28",
+        "idea_name": "RackAudit Flow",
+        "topic": "Warehouse Storage Infrastructure Safety & Industrial Rack Audit SaaS",
+        "keywords": [
+            "pallet rack inspection",
+            "warehouse safety compliance",
+            "upright column damage",
+            "RMI rack safety"
+        ]
     }
 ]
